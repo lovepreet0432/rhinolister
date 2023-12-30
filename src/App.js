@@ -61,7 +61,6 @@ function App() {
   const homepageData = async () => {
     const result = await getHomePageData();
     if (result && result.status == 200) {
-      // Handle the successful response here
       const decodedData = {
         ...result.data.data,
         services: result.data.data.services ? JSON.parse(result.data.data.services) : [],
@@ -91,6 +90,7 @@ function App() {
     }
   }
 
+  console.log('hiiiiii testing git')
   //fetch user
   const fetchUser = async () => {
     if (authToken) {
