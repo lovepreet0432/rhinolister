@@ -1,0 +1,93 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.error-message {
+  color: red;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Profilepage .container .col-sm-9 {
+  position: relative;
+}
+
+.Profilepage .container .col-sm-9 .loader-container {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+.modal-footer h3.red {
+  color: red !important;
+}
+
+.shopify-modal .modal-footer button {
+  display: flex;
+  align-items: center;
+
+}
+
+.shopify-modal .modal-footer button svg {
+  margin-left: 10px
+}
+
+.shopify-modal .modal-footer .custom-btn {
+  color: #4E4E4E;
+  border: 1px solid #4E4E4E;
+}
+
+.shopify-modal .modal-footer .custom-btn:hover {
+  color: #fff;
+  border: 1px solid transparent
+}
