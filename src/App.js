@@ -90,6 +90,7 @@ function App() {
     }
   }
 
+  console.log('hiiiiii testing git')
   //fetch user
   const fetchUser = async () => {
     if (authToken) {
