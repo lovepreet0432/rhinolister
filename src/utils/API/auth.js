@@ -57,6 +57,39 @@ export const registerApi = async (formData) => {
     }
 };
 
+export const UserProfileApi = async (formData,accessToken) => {
+    try {
+        const response = await axios.post(
+            API_BASE_URL+"/userprofile",
+             formData ,
+            {
+                headers: {
+                    "Content-Type": "multipart/form-data",
+                    Authorization: `Bearer ${atob(accessToken)}`
+                },
+            });
+        return response;
+    } catch (error) {
+        return error.response;
+    }
+};
+
+export const ChangePasswordApi = async (formData,accessToken) => {
+    try {
+        const response = await axios.post(
+            API_BASE_URL+"/change-password",
+             formData ,
+            {
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${atob(accessToken)}`,
+                },
+            });
+        return response;
+    } catch (error) {
+        return error.response;
+    }
+};
 
 export const resetPasswordApi = async (email,password,token) => {
     try {

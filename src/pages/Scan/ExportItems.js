@@ -11,7 +11,7 @@ import { calculateDiscountedPrice, currentDateInFormat } from "../../utils/commo
 import ShopifyModal from "./Exports/ShopifyModal";
 import EbayModal from "./Exports/EbayModal";
 import EbayOptions from "./Exports/EbayOptions";
-
+ 
 const ExportItems = ({ batchNumber, scanHistory, onClose, userId, startDate }) => {
 
   const accessToken = localStorage.getItem('access_token');
