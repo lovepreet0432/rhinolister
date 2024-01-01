@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { TailSpin } from "react-loader-spinner";
 import { Col, Row } from "react-bootstrap";
 import DatePicker from 'react-datepicker';
-import { formatDate } from "../../utils/common";
+import { formatDate } from "../../utils/common"; 
 import { getScanData, scanProductNonLogin, scanProduct, checkUserCanScan, scanHistoryData } from "../../utils/API/scan";
 import scanbg from '../../assets/images/scanbg.jpg'
 

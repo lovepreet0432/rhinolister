@@ -89,9 +89,7 @@ function App() {
       }))
     }
   }
-
-  console.log('hiiiiii testing git (dropdown)')
-  console.log('hiiiiii testing git (button)')
+ 
   //fetch user
   const fetchUser = async () => {
     if (authToken) {

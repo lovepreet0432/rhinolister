@@ -9,7 +9,6 @@ import { manuallyEnterScanItem } from "../../utils/API/scan";
 import { formatDateInNumber } from "../../utils/common";
 import { ManuallyEnterItemSchema } from "../../utils/validations";
 import { useFormik } from "formik";
-
  
 const ManuallyEnterItem = ({ userId, setDisableNewBatch, setPaginationKey, setBatchNumber, setKeys, setLoadData, setStartDate, onClose, setScanHistory }) => {
   const formik = useFormik({
